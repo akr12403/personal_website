@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2603e59944.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logol.png" class="logo">
+            <ul>
+                <li><a href ="#header">Home</a></li>
+                <li><a href ="#about">About</a></li>
+                <li><a href ="#Interests">Interests</a></li>
+                <li><a href ="#portfolio">Portfolio</a></li>
+                <li><a href ="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Cybersecurity Engineering</p>
+            <h1><span>George Mason University</span><br></h1>
+        </div>
+    </div>
+</div>
+
+
+<div id="about">
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/linkedin_pic.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi! I'm currently an undergraduate student majoring in Cybersecurity Engineering. I aspire to continuously educate myself and evolve in the dynamic fields of Cybersecurity, Information Technology, Computer Networking and Cloud Solutions.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <!--<p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Cybersecurity/Testing and Networking</span><br>Python, C, Powershell, Kali Linux, Metasploit, Nmap, VirtualBox, Wireshark</li>
+                        <li><span>Cloud Services</span><br>Amazon IAM, Amazon EC2, Amazon S3</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - Current</span><br>Cybersecurity Engineering @ George Mason University (GPA: 3.74)</li>
+                        <p>Coursework: Computing Digital Systems Engineering, Systems Engineering Principles, Computer
+                            Programming Engineers, Object-Oriented Modeling and Design, Operating Systems, Computer Networking,
+                            Critical Infrastructure Protection, Hardware and Cyber Physical Systems, Secure RF Communications
+                            </p>
+                        <li><span>2019 - 2022</span><br>High School @ John Champe High School (GPA: 4.3)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</hr>
+</div>
+
+<div id="Interests">
+    <div class="container">
+        <hr>
+        <h1 class="sub-title">My Interests</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-shield-halved"></i>
+                <h2>Cybersecurity and Networking</h2>
+                <p>I am passionate about cybersecurity as it is imperative to maintain secured organizational infrastructures. Internal networks must be safeguarded from data exfiltration and security incidents to ensure reliability and availability of client services and business continuity. By proactively implementing risk avoidance, I know I am steps ahead of the threat actor. I aspire to work in vulnerability & on-premises testing, incident response and threat intelligence sectors. </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-cloud"></i>
+                <h2>Security and Cloud Distribution</h2>
+                <p>I aspire to be more involved in hands-on opportunities in areas like auditing and assessing controls, Incident Response, and technical implementations behind maintaining the network infrastructure. Furthermore, I wish to get more opportunities to expand my learning in opportunistic fields such as cloud and AI security. </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <hr>
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Screenshot 2024-03-03 223021.png">
+                <div class="layer">
+                    <h3>Socket Programming Chat <a href="https://github.com/akr12403/socket_realtime_chat_app" target="_blank">Application</a></h3>
+                    <p> - Created and designed a robust chat application using TCP Socket Programming and established seamless
+                        real-time communication through an echo client-server architecture.
+                    </p>
+                    <p> - Achieved an average latency of 10ms, ensuring low-latency message delivery and compatible performance in real-time communications.
+                    </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/owasp_riskratingcalculator.png">
+                <div class="layer">
+                    <h3>OWASP Risk Rating <a href="https://github.com/akr12403/owasp_risk_rating_calculator/tree/main" target="_blank">Calculator</a></h3>
+                    <p>- Engineered an OWASP-Compliant Risk Rating Calculator, automating the estimation and prioritization of
+                        security risks in web applications, improving risk prediction accuracy by 25%.
+                    <p>           </p>
+                    </p>
+                    <p>- Enhanced compliance and decision-making across various organizational contexts and business needs.</p>
+                </div>
+            </div>
+        </div>
+        <!--<a href="#" class="btn">See more</a>-->
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <hr>
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i> akshaykasthurirangan@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/akshay-kasthurirangan"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/akr12403"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Resume - AkshayKasthurirangan.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="Submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Akshay Kasthurirangan</p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzKBfnl-jTNxyhFy-hMr9Rgvc_Ngpqc4pP15-niRoKuvcjNeMTT0tK5OPkzgviWY7dU/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },2000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+
+</body>
+</html>
